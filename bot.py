@@ -641,7 +641,7 @@ class ModmailBot(commands.Bot):
                 ", ".join(guild.name for guild in other_guilds),
             )
             logger.warning("If the external servers are valid, you may ignore this message.")
-
+            print(other_guilds)
         self._started = True
 
     async def convert_emoji(self, name: str) -> str:
