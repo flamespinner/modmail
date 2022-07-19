@@ -639,6 +639,7 @@ class ModmailBot(commands.Bot):
                 "The bot is in more servers other than the main and staff server. "
                 "This may cause data compromise (%s).",
                 ", ".join(guild.name for guild in other_guilds),
+                ", ".join(guild.id for guild in other_guilds),
             )
             logger.warning("If the external servers are valid, you may ignore this message.")
 
